@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateForm() {
+  var x = document.forms["myForm"]["fname"].value;
+  var y=document.forms["myForm"]["Password"].value;
+  if (x,y == "") {
+    alert("Name and Password must be filled out");
+    return false;
+
+  }
+}
+</script>
+</head>
+<body style="text-align: center;font-size: 30px;">
+	<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+  Username: <input type="text" name="fname">
+  <input type="submit" value="Submit"><br>
+  Password:<input type="number" name="Password">
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>
